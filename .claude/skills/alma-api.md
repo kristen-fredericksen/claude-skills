@@ -1,3 +1,8 @@
+---
+name: alma-api
+description: Reference for the Ex Libris Alma REST API in the CUNY consortium environment. Use when writing or debugging Python scripts that query or update Alma bibs, holdings, items, users, acquisitions, configuration, sets, jobs, or Analytics. Covers CUNY institution codes, NZ vs. IZ scoping, barcode handling, error patterns, rate limits, and project conventions such as dry-run flags, multi-IZ key management, and CLI entry points.
+---
+
 # Alma API Skill — CUNY Environment
 
 ## Overview

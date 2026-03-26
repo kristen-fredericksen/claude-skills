@@ -1,3 +1,8 @@
+---
+name: primo-api
+description: Reference for the Ex Libris Primo VE REST API in the CUNY consortium environment. Use when writing or debugging search queries, applying facet filters, looking up CUNY view IDs (vid), tabs, and scopes, or troubleshooting authentication and ROUTING_ERROR issues. Covers query syntax, result limits, rate limits, and all CUNY campus vid values.
+---
+
 # Primo API Skill — CUNY Environment
 
 ## Overview
