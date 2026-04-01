@@ -115,6 +115,17 @@ GET    /conf/integration-profiles/{profile_id}
 POST   /conf/integration-profiles
 ```
 
+**Integration profiles — default limit of 10:** `GET /conf/integration-profiles` returns only
+10 results by default, even if more exist. An institution may have many integration profiles
+across types (USER, UPLOAD_E_HOLDINGS, NEW_ORDER_API, PROXY_DEFINITION, etc.), so the default
+will silently omit records. Always filter by type and set an explicit limit:
+```
+GET /conf/integration-profiles?type=UPLOAD_E_HOLDINGS&limit=100
+GET /conf/integration-profiles?type=NEW_ORDER_API&limit=100
+```
+Confirmed by Ex Libris support (April 2026). Fetching all types in a single call with
+`limit=200` also works but filtering by type is the recommended approach.
+
 ### Partners (Resource Sharing)
 ```
 GET    /partners/{partner_code}
