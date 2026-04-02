@@ -94,9 +94,11 @@ The main search endpoint. Returns results, facets, and result count.
 
 ### Configuration
 ```
-GET /primo/v1/configuration/{vid}
+GET /primo/v1/configuration/vid/{vid}
 ```
-Retrieves view configuration for a specific vid.
+Retrieves view configuration for a specific vid. **Primo VE requires the literal `/vid/` path
+segment** — `GET /primo/v1/configuration/{vid}` (without `/vid/`) returns 404. This is
+documented by Ex Libris at https://developers.exlibrisgroup.com/primo/apis/docs/primoConfiguration/R0VUIC9wcmltby92MS9jb25maWd1cmF0aW9uL3t2aWR9/
 
 ### Favorites
 ```
